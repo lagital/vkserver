@@ -3,7 +3,7 @@ import vk
 import re
 import json
 
-session = vk.AuthSession(app_id='5108900', user_login='borisenkop@mail.ru', user_password='i23love56vk', scope='friends,messages,wall')
+session = vk.AuthSession(app_id='test', user_login='test', user_password='test', scope='friends,messages,wall')
 
 api = vk.API(session)
 
@@ -18,5 +18,5 @@ f = api.friends.getOnline()
 #               print (str(s))
 #       time.sleep(2)
 
-#api.messages.send(user_id=25549196, message='Python server: Test, sir!')
-api.wall.post(owner_id=-104885261, message='Python server: Test, sir!')
+#api.messages.send(user_id=test, message='Python server: Test, sir!')
+api.wall.post(owner_id=test, message='Python server: Test, sir!')
